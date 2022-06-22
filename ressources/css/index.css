@@ -1,0 +1,89 @@
+/*Document INFORMATION:
+    -Nom document:LOGO
+    -version:1.0.0
+    -Autor:Fazul
+*/
+
+/* COLORS 
+    -default colors text #848F9A
+    -h1                  
+    -h2                  
+    -h3
+
+    -button
+    -button:hover
+
+    -icon               
+
+    -border
+*/
+
+/* FONT
+    -Default   roboto
+    -subtitle
+
+*/
+
+/* CSS DIRECTORY
+    1.=GLOBAL
+    2.=MAIN
+
+*/
+
+/*GLOBAL
+========================================================*/
+/*MAIN
+========================================================*/
+main{
+    
+    animation: pulse 1.3s infinite;
+    border: 1px solid #fff;
+
+}
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.01);
+    }
+}
+
+header, body {
+    animation: apparition 2s ease-out ;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.btn {
+    animation: nope 3s infinite;
+}
+
+@keyframes nope {
+    0% {
+        transform: translateX(0px);
+    }
+    20% {
+        transform: translateX(10px);
+    }
+    40% {
+        transform: translateX(-10px);
+    }
+    60% {
+        transform: translateX(10px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
